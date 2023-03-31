@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pryMenemSp1S2", "pryMenemSp1S2\pryMenemSp1S2.csproj", "{CAC716D7-B4DF-43B7-B2D0-0E9E8C2CFD31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAC716D7-B4DF-43B7-B2D0-0E9E8C2CFD31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAC716D7-B4DF-43B7-B2D0-0E9E8C2CFD31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAC716D7-B4DF-43B7-B2D0-0E9E8C2CFD31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAC716D7-B4DF-43B7-B2D0-0E9E8C2CFD31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50A6B8D8-1B42-4843-8358-5DA366177E5E}
+	EndGlobalSection
+EndGlobal
