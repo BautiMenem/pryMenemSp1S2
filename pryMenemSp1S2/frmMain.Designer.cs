@@ -114,6 +114,7 @@
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(100, 20);
             this.txtPrecio.TabIndex = 6;
+            this.txtPrecio.TextChanged += new System.EventHandler(this.txtPrecio_TextChanged);
             // 
             // txtCodigo
             // 
@@ -205,6 +206,7 @@
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // frmMain
             // 
@@ -221,6 +223,7 @@
             this.MinimizeBox = false;
             this.Name = "frmMain";
             this.Text = "AutoCor ";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.mrcRepuestos.ResumeLayout(false);
             this.mrcRepuestos.PerformLayout();
             this.ResumeLayout(false);

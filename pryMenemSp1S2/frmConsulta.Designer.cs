@@ -31,10 +31,10 @@
             this.lblMarca = new System.Windows.Forms.Label();
             this.Consultar = new System.Windows.Forms.Button();
             this.mrcOrigen = new System.Windows.Forms.GroupBox();
+            this.rbAmbos = new System.Windows.Forms.RadioButton();
             this.rbNacional2 = new System.Windows.Forms.RadioButton();
             this.rbImportado2 = new System.Windows.Forms.RadioButton();
-            this.rbAmbos = new System.Windows.Forms.RadioButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvRepuestos = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,7 +43,7 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.cboMarca2 = new System.Windows.Forms.ComboBox();
             this.mrcOrigen.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRepuestos)).BeginInit();
             this.SuspendLayout();
             // 
             // lblMarca
@@ -63,6 +63,7 @@
             this.Consultar.TabIndex = 2;
             this.Consultar.Text = "Consultar";
             this.Consultar.UseVisualStyleBackColor = true;
+            this.Consultar.Click += new System.EventHandler(this.Consultar_Click);
             // 
             // mrcOrigen
             // 
@@ -75,6 +76,17 @@
             this.mrcOrigen.TabIndex = 3;
             this.mrcOrigen.TabStop = false;
             this.mrcOrigen.Text = "Origen";
+            // 
+            // rbAmbos
+            // 
+            this.rbAmbos.AutoSize = true;
+            this.rbAmbos.Location = new System.Drawing.Point(197, 35);
+            this.rbAmbos.Name = "rbAmbos";
+            this.rbAmbos.Size = new System.Drawing.Size(57, 17);
+            this.rbAmbos.TabIndex = 13;
+            this.rbAmbos.TabStop = true;
+            this.rbAmbos.Text = "Ambos";
+            this.rbAmbos.UseVisualStyleBackColor = true;
             // 
             // rbNacional2
             // 
@@ -98,30 +110,19 @@
             this.rbImportado2.Text = "Importado";
             this.rbImportado2.UseVisualStyleBackColor = true;
             // 
-            // rbAmbos
+            // dgvRepuestos
             // 
-            this.rbAmbos.AutoSize = true;
-            this.rbAmbos.Location = new System.Drawing.Point(197, 35);
-            this.rbAmbos.Name = "rbAmbos";
-            this.rbAmbos.Size = new System.Drawing.Size(57, 17);
-            this.rbAmbos.TabIndex = 13;
-            this.rbAmbos.TabStop = true;
-            this.rbAmbos.Text = "Ambos";
-            this.rbAmbos.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvRepuestos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRepuestos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(21, 208);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(547, 208);
-            this.dataGridView1.TabIndex = 4;
+            this.dgvRepuestos.Location = new System.Drawing.Point(21, 208);
+            this.dgvRepuestos.Name = "dgvRepuestos";
+            this.dgvRepuestos.Size = new System.Drawing.Size(547, 208);
+            this.dgvRepuestos.TabIndex = 4;
             // 
             // Column1
             // 
@@ -156,6 +157,7 @@
             this.btnSalir.TabIndex = 5;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // cboMarca2
             // 
@@ -176,15 +178,16 @@
             this.ClientSize = new System.Drawing.Size(599, 428);
             this.Controls.Add(this.cboMarca2);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvRepuestos);
             this.Controls.Add(this.mrcOrigen);
             this.Controls.Add(this.Consultar);
             this.Controls.Add(this.lblMarca);
             this.Name = "frmConsulta";
             this.Text = "AutoCor - Consulta";
+            this.Load += new System.EventHandler(this.frmConsulta_Load);
             this.mrcOrigen.ResumeLayout(false);
             this.mrcOrigen.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRepuestos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,7 +201,7 @@
         private System.Windows.Forms.RadioButton rbAmbos;
         private System.Windows.Forms.RadioButton rbNacional2;
         private System.Windows.Forms.RadioButton rbImportado2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvRepuestos;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;

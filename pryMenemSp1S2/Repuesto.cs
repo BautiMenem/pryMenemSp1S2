@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace pryMenemSp1S2
 {
-    internal class ClsRepuestos
+    internal class Repuesto
     {
         public string nombre;
         
-        public int codigo;
+        public string codigo;
 
         public string marca;
 
